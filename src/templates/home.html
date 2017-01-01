@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% load staticfiles %}
+
+{% block title %}{{ block.super }}Home{% endblock %}
+
+
+
+        {% block content %}
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <p>
+                        <img  src="{% static 'site/img/homep1.png' %}" alt="homep1">
+                        </p>    
+                    </div> 
+
+                    <div class="col-md-6">
+                        <img  src="{% static 'site/img/ecen_home.jpg' %}" alt="home_photo">
+                    </div>
+                </div>
+
+                <div class="row lead text-center">
+                    <div class="col-md-12 well">
+                    <h3>What we do</h3>    
+                    <p>Evolve Early Childhood Consultancy provides specialist
+                    professional development, training, mentoring,
+                    support and management consultancy services for Early
+                    Childhood Education. Growth and
+                    development.</p>
+                    </div>
+                    <div class="col-md-12 well">
+                        <h3>
+                            What qualifies us?
+                        </h3>
+                        <p>
+                        Early Childhood News really does have a proven track
+                        record in supporting Early Childhood
+                        Education and Care to the highest standards. We have the
+                        expertise, knowledge, first-hand
+                        experience and qualifications to make a difference for
+                        you and your team.
+                        </p>
+                        <p>
+                        We provide you with working knowledge and practical
+                        solutions to help you to implement
+                        strategies that will give your excellence and
+                        distinction in the activities you do, which support
+                        early childhood growth and education
+                        </p>
+                        <p>
+                        We offer you the personalised and professional service
+                        that you deserve to be outstanding in
+                        matters of early childhood growth and development
+                        </p>
+                    </div>
+                    <div class="col-md-12 well">
+                        <h3>
+                            Mission
+                        </h3>
+                        <p>
+                        To support our clients to be informed and inspired to achieve the highest quality outcomes in
+                        Early Childhood and Care
+                        </p>
+                    <h3>
+                        Vision
+                    </h3>
+                    <p>
+                    To offer time time-tested solutions for early childhood growth and development, education and
+                    care
+                    </p>
+                    <h3>
+                        Core values
+                    </h3>
+                    <ul class="list-unstyled">
+                        <em>
+                            <li>
+                                Passion
+                            </li>
+                            <li>
+                                Excellence
+                            </li>
+                            <li>
+                                Creativity
+                            </li>
+                            <li>
+                                Integrity
+                            </li>
+                            <li>
+                                Honesty
+                            </li>
+                        </em>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+        {% endblock content %}
+
+{% block scripts %}
+<script src="{% static 'site/js/site.js' %}"></script>
+{% endblock scripts %}
+
