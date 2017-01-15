@@ -1,5 +1,6 @@
 <li {% if active_link == "home" %}class="active"{% endif %}><a href="{% url 'home' %}">Home</a></li>
 <li {% if active_link == "site_profile:about_us" %}class="active"{% endif %}><a href="{% url 'site_profile:about_us' %}">About Us</a></li>
+<li {% if active_link == "blog:home" %}class="active"{% endif %}><a href="{% url 'blog:home' %}">News</a></li>
 <li {% if active_link == "news:home" %}class="active"{% endif %}><a href="{% url 'support_training' %}">Support and Training</a></li>
 <li {% if active_link == "news:home" %}class="active"{% endif %}><a href="{% url 'management' %}">Management</a></li>
 <li class="dropdown">

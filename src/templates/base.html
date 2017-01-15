@@ -119,8 +119,15 @@
                             </form>
         </div><!-- /.container -->
 
+        <!-- <div class="text-center"> -->
+        <!--     <span class='st_facebook_hcount' displayText='Facebook'></span> -->
+        <!--     <span class='st_twitter_hcount' displayText='Tweet'></span> -->
+        <!-- </div> -->
         {% block content %}
         {% endblock content %}
+
+
+
 
         {% endblock container %}
 
@@ -176,6 +183,10 @@
             <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
             {% block scripts %}
             {% endblock scripts %}
+            <script id="dsq-count-scr" src="//earlychildhoodnews-co-ke-1.disqus.com/count.js" async></script>
+            <script type="text/javascript"
+                    src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-586acd600dcdc104"></script>
+
     </body>
 </html>
 
