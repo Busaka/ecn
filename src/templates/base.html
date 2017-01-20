@@ -10,10 +10,14 @@
         <meta name="description" content="{% block description %}{% endblock description %}">
         <meta name="author" content="Excellent Student Limited">
         <link rel="shortcut icon" href="{% static 'site/ico/favicon.ico' %}">
+        <meta property="og:type"               content="article" />
+        <meta property="og:title"              content="{{news.heading_one}}" />
+        <meta property="og:description"        content="{{news.h1_paragraph1}}" />
+        <meta property="og:image"              content="{{news.image_one.url}}" />
 
         <title>{% block title %}{% include "_brandname.html" %} | {% endblock %}</title>
 
-        <!-- Bootstrap core CSS -->
+        <!-- bOOTStrap core CSS -->
         <link href="{% static 'bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
 
         <!-- Custom styles for this site -->
@@ -185,8 +189,9 @@
             {% endblock scripts %}
             <script id="dsq-count-scr" src="//earlychildhoodnews-co-ke-1.disqus.com/count.js" async></script>
 
-            <!-- Go to www.addthis.com/dashboard to customize your tools -->
-            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-587e3ab29a5ac378"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5881044de68d6c9c"></script>
+
 
 
 

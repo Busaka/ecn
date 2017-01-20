@@ -14,35 +14,36 @@
 
          {% if all_news %}
 
-                  {% for  item in all_news %}
+                  {% for  news in all_news %}
 
-                  <h2>{{ item.heading_one }}</h2>
-                  {% if item.image_one %}
-                  <img class="thumbnail thumbnail1" src="{{ item.image_one.url }}" height="400" width="550" alt="photo">
+                  <h2>{{ news.heading_one }}</h2>
+                  {% if news.image_one %}
+                  <img class="thumbnail thumbnail1" src="{{ news.image_one.url }}" height="400" width="550" alt="photo">
                   {% endif %}
-                  {% if item.h1_paragraph1 %}
-                  <p > {{ item.h1_paragraph1 }} </p>
-                  <p > {{ item.h1_paragraph2 }} </p>
-                  <p > {{ item.h1_paragraph3 }} </p>
-                  <p > {{ item.h1_paragraph4 }} </p>
-                  <p > {{ item.h1_paragraph5 }}</a> </p>
+                  {% if news.h1_paragraph1 %}
+                  <p > {{ news.h1_paragraph1 }} </p>
+                  <p > {{ news.h1_paragraph2 }} </p>
+                  <p > {{ news.h1_paragraph3 }} </p>
+                  <p > {{ news.h1_paragraph4 }} </p>
+                  <p > {{ news.h1_paragraph5 }}</a> </p>
 
-                  <h3>{{ item.heading_two }}</h3>
-                  <p > {{ item.h2_paragraph1 }} </p>
-                  <p > {{ item.h2_paragraph2 }} </p>
-                  <p > {{ item.h2_paragraph3 }} </p>
-                  <p > {{ item.h2_paragraph4 }} </p>
-                  <p > {{ item.h2_paragraph5 }}</a> </p>
+                  <h3>{{ news.heading_two }}</h3>
+                  <p > {{ news.h2_paragraph1 }} </p>
+                  <p > {{ news.h2_paragraph2 }} </p>
+                  <p > {{ news.h2_paragraph3 }} </p>
+                  <p > {{ news.h2_paragraph4 }} </p>
+                  <p > {{ news.h2_paragraph5 }}</a> </p>
 
-                  <h3>{{ item.heading_three }}</h3>
-                  <p > {{ item.h3_paragraph1 }} </p>
-                  <p > {{ item.h3_paragraph2 }} </p>
-                  <p > {{ item.h3_paragraph3 }} </p>
-                  <p > {{ item.h3_paragraph4 }} </p>
-                  <p > {{ item.h3_paragraph5 }}{% if item.file_one %} <a class="btn btn-default btn-xs" href=" {{item.file_one.url}} " role="button">Learn more &raquo; </a>{% endif %} 
+                  <h3>{{ news.heading_three }}</h3>
+                  <p > {{ news.h3_paragraph1 }} </p>
+                  <p > {{ news.h3_paragraph2 }} </p>
+                  <p > {{ news.h3_paragraph3 }} </p>
+                  <p > {{ news.h3_paragraph4 }} </p>
+                  <p > {{ news.h3_paragraph5 }}{% if news.file_one %} <a
+                      class="btn btn-default btn-xs" href=" {{news.file_one.url}} " role="button">Learn more &raquo; </a>{% endif %} 
                   </p>
                   {% endif %}
-                  <strong>Posted on&#58;</strong> {{ item.pub_date }}  <span class="p-color">({{item.pub_date|timesince}} ago)</span>
+                  <strong>Posted on&#58;</strong> {{ news.pub_date }}  <span class="p-color">({{news.pub_date|timesince}} ago)</span>
                   {% endfor %}
 
         {% endif %}
@@ -74,11 +75,11 @@ s.setAttribute('data-timestamp', +new Date());
               <div class="col-md-4">
                   <h2>Recent News</h2>
                   <p class="p-color>">
-                  {% for item in older_news %}
+                  {% for news in older_news %}
                   <p>
-                  <a href="{% url 'blog:news_id' item.id %}">
+                  <a href="{% url 'blog:news_id' news.id %}">
                       <strong>
-                          {{ item }}
+                          {{ news }}
                       </strong>
                   </a>
                   </p>
